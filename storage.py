@@ -76,7 +76,7 @@ def delete_data(db_file,id):
     cur.execute("DELETE FROM books WHERE id=?",(id,))
     conn.commit()
     conn.close()
-    
+#testing database
 create_connection("MyBooks.db")
 insert_data("effective c++","scott meyers", 2011,955622333,"MyBooks.db")
 print(view_data("MyBooks.db"))
